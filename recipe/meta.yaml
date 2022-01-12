@@ -30,6 +30,13 @@ requirements:
     - certifi
 
 test:
+  requires:
+    - pytest
+  source_files:
+    - tests/
+    - conftest.py
+  commands:
+    - pytest --durations=5 tests/
   imports:
     - hera.task
     - hera.workflow
