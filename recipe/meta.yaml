@@ -1,5 +1,5 @@
 {% set name = "hera-workflows" %}
-{% set version = "0.4.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: aa5819c9e85026f1121142d5ec26e806fdc9690cb588b53b9e2bb8322826945d
+  sha256: fd9e120f9e670165d22cce29b8099b9477fab8598424d416d3d461cdfb0c5e60
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -37,7 +37,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Hera is an Argo Workflows Python SDK'
+  summary: Hera is an Argo Workflows Python SDK
   description: |
     Hera is an Argo Workflows Python SDK.
     Hera aims to make workflow construction and submission easy and accessible to everyone!
