@@ -31,9 +31,9 @@ requirements:
 
 test:
   imports:
-    - hera.v1.task
-    - hera.v1.workflow
-    - hera.v1.workflow_service
+    - hera.task
+    - hera.workflow
+    - hera.workflow_service
 
 about:
   home: https://github.com/argoproj-labs/hera-workflows
