@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - argo-workflows
+    - argo-workflows==6.3.0rc2
     - pydantic
     - python-dateutil
     - urllib3
