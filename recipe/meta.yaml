@@ -16,13 +16,10 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
-    - python
-    - pip
-    - poetry
   host:
     - python >=3.7
     - pip
+    - poetry
   run:
     - python >=3.7
     - argo-workflows ==6.3.5
@@ -31,7 +28,6 @@ requirements:
     - urllib3
     - certifi
     - pytz
-    - poetry
 
 test:
   requires:
