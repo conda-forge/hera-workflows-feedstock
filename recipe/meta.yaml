@@ -16,6 +16,10 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
+  build:
+    - python
+    - pip
+    - poetry
   host:
     - python >=3.7
     - pip
