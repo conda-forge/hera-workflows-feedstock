@@ -16,6 +16,8 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
+  build:
+    - poetry
   host:
     - python >=3.7
     - pip
@@ -27,8 +29,6 @@ requirements:
     - urllib3
     - certifi
     - pytz
-  build:
-    - poetry
 
 test:
   requires:
