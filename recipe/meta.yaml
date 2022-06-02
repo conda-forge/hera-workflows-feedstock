@@ -1,5 +1,5 @@
 {% set name = "hera-workflows" %}
-{% set version = "3.2.0" %}
+{% set version = "3.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   # for now, replacing source to be git repo, so actual tests can run
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fe063d8cd5e6355f580ec4b95aed6e8193604f798ac5414ad3e15e689bc2a5b1
+  sha256: a0e7f48eeaba2d480da1935746bfd55735e2fb42392c6667ad449a3c36aadf65
 
 build:
   noarch: python
