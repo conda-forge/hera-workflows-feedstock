@@ -1,5 +1,5 @@
 {% set name = "hera-workflows" %}
-{% set version = "2.2.0" %}
+{% set version = "3.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,8 @@ package:
 
 source:
   # for now, replacing source to be git repo, so actual tests can run
-  # url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  # sha256: fd9e120f9e670165d22cce29b8099b9477fab8598424d416d3d461cdfb0c5e60
-  git_url: https://github.com/argoproj-labs/hera-workflows.git
-  git_rev: 4ef8100909320e711b661895c4f7febba4906c74
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: a0e7f48eeaba2d480da1935746bfd55735e2fb42392c6667ad449a3c36aadf65
 
 build:
   noarch: python
@@ -21,27 +19,25 @@ requirements:
   host:
     - python >=3.7
     - pip
+    - poetry
   run:
     - python >=3.7
-    - argo-workflows ==6.3.0rc5
+    - argo-workflows ==6.3.5
     - pydantic
     - python-dateutil
     - urllib3
-    - certifi
-    - pytz
+    - certifi <2022.0.0,>=2021.10.8
+    - pytz <2022.0,>=2021.3
 
 test:
-  requires:
-    - pytest
-  source_files:
-    - tests/
-    - conftest.py
-  commands:
-    - pytest --durations=5 tests/
   imports:
     - hera.task
     - hera.workflow
     - hera.workflow_service
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/argoproj-labs/hera-workflows
