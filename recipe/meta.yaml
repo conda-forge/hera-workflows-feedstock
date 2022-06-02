@@ -26,8 +26,8 @@ requirements:
     - pydantic
     - python-dateutil
     - urllib3
-    - certifi
-    - pytz
+    - certifi "<2022.0.0,>=2021.10.8"
+    - pytz "<2022.0,>=2021.3"
 
 test:
   imports:
