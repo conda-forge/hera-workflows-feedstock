@@ -1,14 +1,13 @@
 {% set name = "hera-workflows" %}
-{% set version = "4.0.1" %}
+{% set version = "4.3.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  # for now, replacing source to be git repo, so actual tests can run
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a055feaeced9c9597cce76a167b2c00d0c3d58edc4ba09e503385ee00b06f152
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hera_workflows-{{ version }}.tar.gz
+  sha256: 30976fe13de04d803d430825721532921f5b18edbd90b861e5d69b0ba8123859
 
 build:
   noarch: python
@@ -17,17 +16,17 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.7,<4.0
     - pip
     - poetry
   run:
-    - python >=3.7
+    - python >=3.7,<4.0
     - argo-workflows ==6.3.5
-    - pydantic
-    - python-dateutil
-    - urllib3
-    - certifi <2022.0.0,>=2021.10.8
-    - pytz <2022.0,>=2021.3
+    - certifi >=2021.10.8
+    - python-dateutil >=2.8.2
+    - pytz >=2021.3
+    - urllib3 >=1.26.8
+    - typing-extensions >=3.10.0
 
 test:
   imports:
