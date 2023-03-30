@@ -1,11 +1,11 @@
-About hera-workflows
-====================
+About hera-workflows-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hera-workflows-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/argoproj-labs/hera-workflows
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hera-workflows-feedstock/blob/main/LICENSE.txt)
 
 Summary: Hera is an Argo Workflows Python SDK
 
