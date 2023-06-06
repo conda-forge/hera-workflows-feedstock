@@ -1,5 +1,5 @@
-{% set name = "hera-workflows" %}
-{% set version = "5.0.1" %}
+{% set name = "hera" %}
+{% set version = "5.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hera_workflows-{{ version }}.tar.gz
-  sha256: 078af9dcb322dcd7fbf2fc6921fc891793f682fb32c68d0374a74bb1714ab5e9
+  sha256: e8996938573b08d6352dbb5c98e5fe56fab43e9eda2943a56c7de44d5d0a27c2
 
 build:
   noarch: python
@@ -21,18 +21,13 @@ requirements:
     - poetry
   run:
     - python >=3.7,<4.0
-    - argo-workflows ==6.3.5
-    - certifi >=2021.10.8
-    - python-dateutil >=2.8.2
-    - pytz >=2021.3
-    - urllib3 >=1.26.8
-    - typing-extensions >=3.10.0
+    - pydantic >=1.7,<2.0
+    - requests
+    - pyyaml >=6.0
 
 test:
   imports:
-    - hera.task
-    - hera.workflow
-    - hera.workflow_service
+    - hera.workflows
   commands:
     - pip check
   requires:
