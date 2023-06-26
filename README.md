@@ -1,5 +1,5 @@
-About hera-workflows-feedstock
-==============================
+About hera-feedstock
+====================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hera-workflows-feedstock/blob/main/LICENSE.txt)
 
@@ -36,53 +36,53 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-hera--workflows-green.svg)](https://anaconda.org/conda-forge/hera-workflows) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/hera-workflows.svg)](https://anaconda.org/conda-forge/hera-workflows) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/hera-workflows.svg)](https://anaconda.org/conda-forge/hera-workflows) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/hera-workflows.svg)](https://anaconda.org/conda-forge/hera-workflows) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-hera-green.svg)](https://anaconda.org/conda-forge/hera) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/hera.svg)](https://anaconda.org/conda-forge/hera) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/hera.svg)](https://anaconda.org/conda-forge/hera) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/hera.svg)](https://anaconda.org/conda-forge/hera) |
 
-Installing hera-workflows
-=========================
+Installing hera
+===============
 
-Installing `hera-workflows` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `hera` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `hera-workflows` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `hera` can be installed with `conda`:
 
 ```
-conda install hera-workflows
-```
-
-or with `mamba`:
-
-```
-mamba install hera-workflows
-```
-
-It is possible to list all of the versions of `hera-workflows` available on your platform with `conda`:
-
-```
-conda search hera-workflows --channel conda-forge
+conda install hera
 ```
 
 or with `mamba`:
 
 ```
-mamba search hera-workflows --channel conda-forge
+mamba install hera
+```
+
+It is possible to list all of the versions of `hera` available on your platform with `conda`:
+
+```
+conda search hera --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search hera --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search hera-workflows --channel conda-forge
+mamba repoquery search hera --channel conda-forge
 
-# List packages depending on `hera-workflows`:
-mamba repoquery whoneeds hera-workflows --channel conda-forge
+# List packages depending on `hera`:
+mamba repoquery whoneeds hera --channel conda-forge
 
-# List dependencies of `hera-workflows`:
-mamba repoquery depends hera-workflows --channel conda-forge
+# List dependencies of `hera`:
+mamba repoquery depends hera --channel conda-forge
 ```
 
 
@@ -127,17 +127,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating hera-workflows-feedstock
-=================================
+Updating hera-feedstock
+=======================
 
-If you would like to improve the hera-workflows recipe or build a new
+If you would like to improve the hera recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/hera-workflows-feedstock are
+Note that all branches in the conda-forge/hera-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
@@ -152,6 +152,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@GuyPozner](https://github.com/GuyPozner/)
 * [@bchalk101](https://github.com/bchalk101/)
 * [@harelwa](https://github.com/harelwa/)
 
