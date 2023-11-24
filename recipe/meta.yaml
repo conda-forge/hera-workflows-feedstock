@@ -1,5 +1,5 @@
 {% set name = "hera" %}
-{% set version = "5.8.0" %}
+{% set version = "5.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hera-{{ version }}.tar.gz
-  sha256: 004a9f28b5d00de607a3b81f2e75ee3df2a072f97456ccab5172db8f20e8afb8
+  sha256: 05f1e6714d5f998cd7aacb50bb63dcac2cff4ed5459fa20a4f272f3eb08b5750
 
 build:
   noarch: python
