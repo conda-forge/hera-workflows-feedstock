@@ -1,5 +1,5 @@
 {% set name = "hera" %}
-{% set version = "5.13.1" %}
+{% set version = "5.15.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hera-{{ version }}.tar.gz
-  sha256: f58f9c6823e12a2ab6eb3ff7a3ab443ac7048b62fcb8b9c658b082edb9abd14d
+  sha256: 1329600acdbfcfe700da2e71c5d868ae47636adc8757085f015b7852c0b59ebc
 
 build:
   noarch: python
@@ -33,7 +33,7 @@ test:
     - pip
 
 about:
-  home: https://github.com/argoproj-labs/hera-workflows
+  home: https://github.com/argoproj-labs/hera
   license: MIT
   license_family: MIT
   license_file: LICENSE
@@ -42,8 +42,8 @@ about:
     Hera is an Argo Workflows Python SDK.
     Hera aims to make workflow construction and submission easy and accessible to everyone!
     Hera abstracts away workflow setup details while still maintaining a consistent vocabulary with Argo Workflows.
-  doc_url: https://github.com/argoproj-labs/hera-workflows
-  dev_url: https://github.com/argoproj-labs/hera-workflows
+  doc_url: https://hera.readthedocs.io/en/stable/
+  dev_url: https://github.com/argoproj-labs/hera
 
 extra:
   recipe-maintainers:
