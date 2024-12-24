@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hera-{{ version }}.tar.gz
-  sha256: f58f9c6823e12a2ab6eb3ff7a3ab443ac7048b62fcb8b9c658b082edb9abd14d
+  sha256: 5b4dcd63c0642a67054e6bb85a89143a7b6ae23606261c86d819f5a8ab2f6f47
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
