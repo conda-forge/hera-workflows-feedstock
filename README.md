@@ -155,4 +155,5 @@ Feedstock Maintainers
 * [@GuyPozner](https://github.com/GuyPozner/)
 * [@bchalk101](https://github.com/bchalk101/)
 * [@harelwa](https://github.com/harelwa/)
+* [@sagiahrac](https://github.com/sagiahrac/)
 
